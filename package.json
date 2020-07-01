@@ -1,0 +1,26 @@
+{
+  "name": "mongoose-api",
+  "version": "1.0.0",
+  "description": "A very simple API using mongoose",
+  "main": "app.js",
+  "scripts": {
+    "dev": "concurrently \"nodemon app.js arg\" \"cd client && npm start\"",
+    "start": "nodemon app.js",
+    "heroku-postbuild": "node app.js && cd client && npm install && npm run build"
+  },
+  "author": "Jonathan Wallace",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "bcrypt": "^5.0.0",
+    "concurrently": "^5.2.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.1.7-alpha.3",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.19",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.4"
+  }
+}
